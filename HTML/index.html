@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/mediaquery.css">
+    <script src="../JS/bootstrap.bundle.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <!-- <script src="https://unpkg.com/scrollreveal" defer></script> -->
+    <script src="../JS/script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+          <i class="fa-solid fa-building mr-2"></i>
+          <h1>APEX</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul id="headerUL" class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item py-2 mx-1">
+              <a class="nav-link active py-4" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item py-2 mx-1">
+              <a class="nav-link py-4" href="#">About Us</a>
+            </li>
+            <li class="nav-item py-2 mx-1">
+              <a class="nav-link py-4" href="#" aria-disabled="true">Our Services</a>
+            </li>
+            <li class="nav-item dropdown py-2 mx-1 position-relative">
+              <a class="nav-link dropdown-toggle py-4" href="#" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-list rounded">
+                <li><a class="dropdown-item mb-3 ps-3" href="#">Features</a></li>
+                <li><a class="dropdown-item mb-3 ps-3" href="#">Appointment</a></li>
+                <li><a class="dropdown-item mb-3 ps-3" href="#">Our Team</a></li>
+                <li><a class="dropdown-item mb-3 ps-3" href="#">Testimonal</a></li>
+                <li><a class="dropdown-item ps-3" href="#">404 Page</a></li>
+              </ul>
+            </li>
+            <li class="nav-item py-2 mx-1">
+              <a class="nav-link py-4" href="#" aria-disabled="true">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section class="home position-relative py-5">
+    <div class="outer-container position-absolute top-0 start-0">
+      <div class="image-container h-100 w-100 position-absolute">
+        <img src="../img/carousel-1.jpg" alt="" id="mainImage">
+      </div>
+      <div class="text">
+        <div class="container w-100 d-flex flex-column justify-content-center">
+          <div class="inner-container">
+            <p>WELCOME TO APEX</p>
+            <h1>A Construction & Renovation Company</h1>
+            <div>
+              <span>Commercial</span>
+              <span>Residential</span>
+              <span>Industrial</span>
+            </div>
+            <button>More Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="outer-container position-absolute">
+      <div class="image-container h-100 w-100 position-absolute">
+        <img src="../img/carousel-2.jpg" alt="secondaryImgae">
+      </div>
+      <div class="text">
+        <div class="container w-100 d-flex flex-column justify-content-center">
+          <div class="inner-container">
+            <p>WELCOME TO APEX</p>
+            <h1>A Construction & Renovation Company</h1>
+            <div>
+              <span>Commercial</span>
+              <span>Residential</span>
+              <span>Industrial</span>
+            </div>
+            <button>More Details</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-us py-5">
+    <div class="container">
+      <div class="temp-container row align-items-center">
+        <div class="left-part col-12 col-lg-6">
+          <div class="inner-container position-relative" style="height: 468px;">
+            <div class="floating-box position-absolute top-0 left-0 p-3">
+              <div id="floatingBox" class="box text-center d-flex flex-column justify-content-center" style="width: 180px; height: 180px; background-color: #fda12b; color: white;">
+                <p style="font-size: 38px; font-weight: 600; height: 45px;" class="m-0 p-0">25</p>
+                <p style="font-size: 38px; font-weight: 600;" class="m-0 p-0">Years</p>
+                <p style="font-size: 20px; font-weight: 600;" class="m-0 mb-2 p-0">Experience</p>
+              </div>
+            </div>
+            <div id="floatingImage" class="image-container position-absolute">
+              <img src="../img/about.jpg" alt="About Us Image">
+            </div>
+          </div>
+        </div>
+        <div class="right-part col-12 col-lg-6">
+          <div class="inner-container py-5">
+            <div class="upper row ">
+              <div class="col-1">
+                <div style="background-color: #fda12b; height: 100%; width: 30%;"></div>
+              </div>
+              <div class="col-10 p-0">
+                <div>
+                  <span style="color: #888;">ABOUT US</span>
+                  <h2 style="font-size: 35px; color: black; font-weight: 700; line-height: 1.2;">Unique Solutions For Residentials & Industries!</h2>
+                </div>
+              </div>
+            </div>
+            <div class="my-5">
+              <p style="color: #888;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+              Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+              <p style="color: #888;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+              Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            </div>
+            <div style="background-color: #888; width: 100%; height: 0.1px;" class="my-3"></div>
+            <div class="guarantee row">
+              <div class="container1 col-12 col-md-4">
+                <div class="box row">
+                  <div class="col-2 d-flex align-items-center">
+                    <i class="fa-solid fa-check" style="transform: scale(2.5); color: #fda12b;"></i>
+                  </div>
+                  <p class="col-10 m-0">Ontime at services</p>
+                </div>
+              </div>
+              <div class="container2 col-12 col-md-4">
+                <div class="box row">
+                  <div class="col-2 d-flex align-items-center">
+                    <i class="fa-solid fa-check" style="transform: scale(2.5); color: #fda12b;"></i>
+                  </div>
+                  <p class="col-10 m-0">24/7 hours services</p>
+                </div>
+              </div>
+              <div class="container3 col-12 col-md-4">
+                <div class="box row">
+                  <div class="col-2 d-flex align-items-center">
+                    <i class="fa-solid fa-check" style="transform: scale(2.5); color: #fda12b;"></i>
+                  </div>
+                  <p class="col-10 m-0">Verified professionals</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="science row py-5">
+    <div class="box1 col-12 col-md-6 col-lg-3 px-3 py-5">
+      <div class="px-3">
+        <span>01</span>
+        <h3 class="mb-3">Construction</h3>
+        <p>Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet</p>
+        <a href="#">Read More
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="box2 col-12 col-md-6 col-lg-3 px-3 py-5">
+      <div class="px-3">
+        <span>02</span>
+        <h3 class="mb-3">Construction</h3>
+        <p>Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet</p>
+        <a href="#">Read More
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="box3 col-12 col-md-6 col-lg-3 px-3 py-5">
+      <div class="px-3">
+        <span>03</span>
+        <h3 class="mb-3">Construction</h3>
+        <p>Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet</p>
+        <a href="#">Read More
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+    <div class="box4 col-12 col-md-6 col-lg-3 px-3 py-5">
+      <div class="px-3">
+        <span>04</span>
+        <h3 class="mb-3">Construction</h3>
+        <p>Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit clita duo justo erat amet</p>
+        <a href="#">Read More
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="about-us2">
+    <div class="container">
+      <div class="temp-container row align-items-center">
+        <div class="right-part col-12 col-lg-6">
+          <div class="inner-container py-5">
+            <div class="upper row ">
+              <div class="col-1">
+                <div style="background-color: #fda12b; height: 100%; width: 30%;"></div>
+              </div>
+              <div class="col-10 p-0">
+                <div>
+                  <span style="color: #888;">WHY CHOOSE US!</span>
+                  <h2 style="font-size: 35px; color: black; font-weight: 700; line-height: 1.2;">Our Specialization And Company Features</h2>
+                </div>
+              </div>
+            </div>
+            <div class="my-5">
+              <p style="color: #888;">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos.
+                Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            </div>
+                <div style="background-color: #888; width: 100%; height: 0.1px;" class="my-3"></div>
+                <div class="guarantee row align-items-center justify-content-center">
+                  <div class="container1 col-12 col-md-6 mb-5">
+                    <div class="box row">
+                      <div class="col-2 d-flex align-items-center">
+                        <i class="fa-solid fa-check" style="transform: scale(2.5); color: #fda12b;"></i>
+                      </div>
+                      <p class="col-10 m-0 fs-5">Large number of services provided</p>
+                      <div class="mt-3">
+                        <p>Magna sea eos sit dolor, ipsum amet ipsum lorem diam</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container2 col-12 col-md-6 mb-5">
+                    <div class="box row">
+                      <div class="col-2 d-flex align-items-center">
+                        <i class="fa-solid fa-check" style="transform: scale(2.5); color: #fda12b;"></i>
+                      </div>
+                      <p class="col-10 m-0 fs-5">25+ years of professional experience</p>
+                      <div class="mt-3">
+                        <p>Magna sea eos sit dolor, ipsum amet ipsum lorem diam</p>
+                      </div>        
+                    </div>
+                  </div>
+                  <div class="container3 col-12 col-md-6">
+                    <div class="box row">
+                      <div class="col-2 d-flex align-items-center">
+                        <i class="fa-solid fa-check" style="transform: scale(2.5); color: #fda12b;"></i>
+                      </div>
+                      <p class="col-10 m-0 fs-5">A large number of grateful customers</p>
+                      <div class="mt-3">
+                        <p>Magna sea eos sit dolor, ipsum amet ipsum lorem diam</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="container3 col-12 col-md-6">
+                    <div class="box row">
+                      <div class="col-2 d-flex align-items-center">
+                        <i class="fa-solid fa-check" style="transform: scale(2.5); color: #fda12b;"></i>
+                      </div>
+                      <p class="col-10 m-0 fs-5">Always reliable and affordable prices</p>
+                      <div class="mt-3">
+                        <p>Magna sea eos sit dolor, ipsum amet ipsum lorem diam</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="left-part col-12 col-lg-6 d-flex align-items-center">
+              <div class="inner-container position-relative d-flex justify-content-end">
+                <div class="box p-3">
+                  <div class="inner-box text-center d-flex flex-column justify-content-center" style="width: 180px; height: 180px; background-color: #fda12b; color: white;">
+                    <p style="font-size: 38px; font-weight: 600; height: 45px;" class="m-0 p-0">25</p>
+                    <p style="font-size: 38px; font-weight: 600;" class="m-0 p-0">Years</p>
+                    <p style="font-size: 20px; font-weight: 600;" class="m-0 mb-2 p-0">Experience</p>
+                  </div>
+                </div>
+                <img src="../img/feature.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+  </section>
+  <section class="tech">
+    <div class="container">
+      <div class="upper-part row py-5 align-items-center flex-wrap">
+        <div class="d-flex col-12 col-md-6">
+          <div class="px-3">
+            <div style="background-color: #fda12b; height: 100%; width: 7px;"></div>
+          </div>
+          <div style="width: 30rem;">
+            <span>WHY CHOOSE US!</span>
+            <h2>Construction And Renovation Solutions</h2>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-md-end">
+          <button style="background-color: #fda12b;color: white;border-radius: 0;border: unset;padding: 16px 48px;margin-top: 20px;transition: 0.3s;">More Services</button>
+        </div>
+      </div>
+      <div class="gallery row">
+        <div class="col-12 col-6 col-lg-4 text-center mb-4">
+          <div>
+            <img src="../img/service-1.jpg" style="height: 60%;" alt="">
+            <div class="px-3 pb-4">
+              <h3 style="font-size: 24px; font-weight: bolder;" class="my-3">Building Construction</h3>
+              <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+              <a href="#">READ MORE</a>
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-6 col-lg-4 text-center mb-4">
+          <div>
+            <img src="../img/service-2.jpg" style="height: 60%;" alt="">
+            <div class="px-3 pb-4">
+              <h3 style="font-size: 24px; font-weight: bolder;" class="my-3">Building Construction</h3>
+              <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+              <a href="#">READ MORE</a>
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-6 col-lg-4 text-center mb-4">
+          <div>
+            <img src="../img/service-3.jpg" style="height: 60%;" alt="">
+            <div class="px-3 pb-4">
+              <h3 style="font-size: 24px; font-weight: bolder;" class="my-3">Building Construction</h3>
+              <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+              <a href="#">READ MORE</a>
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-6 col-lg-4 text-center mb-4">
+          <div>
+            <img src="../img/service-4.jpg" style="height: 60%;" alt="">
+            <div class="px-3 pb-4">
+              <h3 style="font-size: 24px; font-weight: bolder;" class="my-3">Building Construction</h3>
+              <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+              <a href="#">READ MORE</a>
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-6 col-lg-4 text-center mb-4">
+          <div>
+            <img src="../img/service-5.jpg" style="height: 60%;" alt="">
+            <div class="px-3 pb-4">
+              <h3 style="font-size: 24px; font-weight: bolder;" class="my-3">Building Construction</h3>
+              <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+              <a href="#">READ MORE</a>
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-6 col-lg-4 text-center mb-4">
+          <div>
+            <img src="../img/service-6.jpg" style="height: 60%;" alt="">
+            <div class="px-3 pb-4">
+              <h3 style="font-size: 24px; font-weight: bolder;" class="my-3">Building Construction</h3>
+              <p>Tempor erat elitr rebum at clita dolor diam ipsum sit diam amet diam et eos</p>
+              <a href="#">READ MORE</a>
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form py-5 position-relative">
+    <div class="container position-relative">
+      <div class="inner-container row align-items-center">
+        <div class="left-part col-12 col-md-6">
+          <div class="inner-container">
+            <div class="d-flex align-items-center mb-5">
+              <div class="pe-3">
+                <div class="p-0 m-0" style="background-color: #fda12b; height: 6rem; width: 7px;"></div>
+              </div>
+              <div style="width: 30rem;">
+                <span>WHY CHOOSE US!</span>
+                <h2>Construction And Renovation Solutions</h2>
+              </div>
+            </div>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
+            Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
+            sed stet lorem sit clita duo justo magna dolore erat amet</p>
+          </div>
+        </div>
+        <div class="right-part col-12 col-md-6">
+          <div class="inner-container">
+            <form action="#">
+              <div class="row">
+                <div class="col-6">
+                  <input class="w-100 bg-dark border border-0 py-2" type="text" placeholder="your name">
+                </div>
+                <div class="col-6">
+                  <input class="w-100 bg-dark border border-0 py-2" type="text" placeholder="your name">
+                </div>
+              </div>
+              <div class="row my-3">
+                <div class="col-6">
+                  <input class="w-100 bg-dark border border-0 py-2" type="text" placeholder="your last Name">
+                </div>
+                <div class="col-6">
+                  <input class="w-100 bg-dark border border-0 py-2" type="text" placeholder="your last Name">
+                </div>
+              </div>
+              <div class="input-group my-3">
+                <textarea class="form-control bg-dark border border-0 py-4" style="border-radius: 0;" placeholder="message" aria-label="With textarea"></textarea>
+              </div>
+              <button class="py-3 border border-0" style="width: 100%;background-color: #fdaf2b;text-transform: capitalize;font-size: 12px;">Get Appointement</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="engineers">
+    <div class="container">
+      <div class="upper-part row py-5 align-items-center flex-wrap">
+        <div class="d-flex col-12 col-md-6">
+          <div class="px-3">
+            <div style="background-color: #fda12b; height: 100%; width: 7px;"></div>
+          </div>
+          <div style="width: 30rem;">
+            <span>WHY CHOOSE US!</span>
+            <h2>Our Expert Worker</h2>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 d-flex justify-content-md-end">
+          <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+        </div>
+      </div>
+      <div class="gallery row">
+        <div class="col-12 col-lg-4 position-relative">
+          <img src="../img/team-1.jpg" alt="">
+          <div class="position-absolute py-2">
+            <h1 class="ms-4 fs-3">Full Name</h1>
+            <p class="ms-4 mb-0 fs-5">Engineer</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 position-relative">
+          <img src="../img/team-2.jpg" alt="">
+          <div class="position-absolute py-2">
+            <h1 class="ms-4 fs-3">Full Name</h1>
+            <p class="ms-4 mb-0 fs-5">Engineer</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 position-relative">
+          <img src="../img/team-3.jpg" alt="">
+          <div class="position-absolute py-2">
+            <h1 class="ms-4 fs-3">Full Name</h1>
+            <p class="ms-4 mb-0 fs-5">Engineer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    </body>
+    </html>

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "scrollmagic": "^2.0.8",
+    "scrollreveal": "^4.0.9"
+  }
+}

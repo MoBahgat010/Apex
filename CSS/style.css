@@ -1,0 +1,383 @@
+@import url("./keyframes.css");
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*Start Header*/
+.navbar .container-fluid .navbar-brand
+{
+    width: 20%;
+}
+.navbar .container-fluid .navbar-brand > i
+{
+    transform: scale(2) translateX(-0.5rem);
+    margin-left: 2rem;
+    color: #fda12b;
+}
+.navbar .container-fluid .navbar-nav .nav-link
+{
+    transition: 0.3s;
+    padding: 25px 0;
+    position: relative;
+    margin-left: 30px;
+    font-size: 14.3px;
+    font-weight: 500;
+    color: #888;
+}
+.navbar .container-fluid .active>.nav-link,
+.navbar .container-fluid .nav-link.active,
+.navbar .container-fluid .nav-link.show,
+.navbar .container-fluid .show>.nav-link {
+    color: #fdaf4b !important;
+}
+.navbar .container-fluid .navbar-nav .nav-link{
+    text-transform:  uppercase;
+}
+.navbar .container-fluid .navbar-nav .nav-item.dropdown > ul
+{
+    visibility: hidden;
+    opacity: 0;
+    padding: 1rem 4.6rem 1rem 0rem;
+    background-color: white;
+    position: absolute;
+    top: 110%;
+    left: 0;
+    list-style: none;
+    transition: 300ms;
+}
+.navbar .container-fluid .navbar-nav .nav-item.dropdown:hover > ul,
+.navbar .container-fluid .navbar-nav .nav-item.dropdown > ul:hover
+{
+    top: 100%;
+    visibility: visible;
+    opacity: 1;
+    transition: 300ms;
+}
+.navbar .container-fluid .navbar-nav .nav-item.dropdown ul > .dropdown-item:hover
+{
+    background-color: #fda12b;
+}
+
+/*End Header*/
+
+/*Start Home*/
+.home
+{
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+}
+.home .outer-container
+{
+    z-index: -1;
+    animation-name: Swiper;
+    animation-timing-function: ease-in-out;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.home .outer-container:first-child
+{
+    inset: 0;
+}
+.home .outer-container:last-child
+{
+    top: 0;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+}
+.home .outer-container > .image-container
+{
+    inset: 0;
+}
+.home .outer-container .text
+{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+}
+.home .outer-container .text .container
+{
+    height: 100%;
+}
+.home .outer-container .text .container .inner-container > h1
+{
+    font-size: 84px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 20px 0;
+}
+.home .outer-container .text .container .inner-container > p
+{
+    font-size: 20px;
+    font-weight: 500;
+}
+.home .outer-container .text .container .inner-container > button
+{
+    background-color: #fda12b;
+    color: white;
+    border-radius: 0;
+    border: unset;
+    padding: 16px 48px;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+.home .outer-container .text .container .inner-container > div > span:nth-child(2)
+{
+    position: relative;
+    margin: 0 2rem;
+}
+.home .outer-container .text .container .inner-container > div > span:nth-child(2)::after
+{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: #fda12b;
+    border-radius: 50%;
+    left: -31%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.home .outer-container .text .container .inner-container > div > span:nth-child(2)::before
+{
+    content: "";
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    background-color: #fda12b;
+    border-radius: 50%;
+    right: -31%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*End Home*/
+/*Start About Us*/
+.about-us
+{
+    overflow: hidden;
+    /* min-height: 468px; */
+}
+.about-us .container .row .left-part .floating-box
+{
+    background-color: white;
+}
+.about-us .container .row .left-part .image-container
+{
+    z-index: -1;
+    width: 90%;
+    height: 84%;
+    right: 0;
+    bottom: 0;
+}
+.about-us .container .row .left-part .image-container > img
+{
+    object-position: top;
+}
+.about-us .container .row .right-part .inner-container .guarantee > .col-12 > .box > p
+{
+    font-size: 17px;
+}
+/*End About Us*/
+/*Start Science*/
+.science
+{
+    width: 100.8%;
+}
+.science .box1
+{
+    background-image: url(../img/fact-1.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+}
+.science .box2
+{
+    background-image: url(../img/fact-1.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    
+}
+.science .box3
+{
+    background-image: url(../img/fact-1.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    
+}
+.science .box4
+{
+    background-image: url(../img/fact-1.jpg);
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    
+}
+.science .box1,.science .box2,.science .box3,.science .box4
+{
+    position: relative;
+    color: white;
+}
+.science .box1::after,.science .box2::after,.science .box3::after,.science .box4::after
+{
+    position: absolute;
+    content: '';
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.science .box1 > div,.science .box2> div,.science .box3> div,.science .box4> div
+{
+    position: relative;
+    z-index: 10;
+}
+.science .box1 > div > span,.science .box2 > div > span,.science .box3 > div> span,.science .box4 > div > span
+{
+    -webkit-text-stroke: 2px #fdaf4b;
+    color: transparent;
+    font-size: 120px;
+}
+.science .box1 > div > h2,.science .box2 > div > h2,.science .box3 > div> h2,.science .box4 > div > h2
+{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.science .box1 > div > a,.science .box2 > div > a,.science .box3 > div> a,.science .box4 > div > a
+{
+    text-transform: uppercase;
+    position: relative;
+    transition: 300ms;
+}
+.science .box1 > div > a:hover,.science .box2 > div > a:hover,.science .box3 > div> a:hover,.science .box4 > div > a:hover
+{
+    color: #fda12b;
+    transition: 300ms;
+}
+/*End Science*/
+/*Start about-us2*/
+.about-us2 .container .left-part
+{
+    height: 100%;
+}
+.about-us2 .container .left-part .inner-container .box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.about-us2 .container .left-part .inner-container .box .inner-box
+{
+    background-color: #fda12b;
+    width: 180px;
+    height: 180px;
+    z-index: 10;
+}
+.about-us2 .container .left-part .inner-container > img
+{
+    width: 90%;
+}
+/*End about-us2*/
+/*Start tech*/
+.tech .container .gallery > div > div
+{
+    position: relative;
+}
+.tech .container .gallery > div > div::after
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 0;
+    background-color: #fdaf4b;
+    opacity: 0;
+    transition: 0.5s;
+}
+.tech .container .gallery > div >div:hover
+{
+    color: white;
+    transition: 1s;
+}
+.tech .container .gallery > div > div:hover::after
+{
+    height: 100%;
+    opacity: 1;
+    transition: 0.5s;
+}
+/*End tech*/
+/*Start Form*/
+.form
+{
+    background-image: url(../img/carousel-2.jpg);
+    background-size: cover;
+}
+.form::after
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.form .container
+{
+    color: white;
+    z-index: 1;
+}
+.form .right-part .inner-container form input::placeholder
+{
+    transform: translateX(1rem);
+}
+.form .right-part .inner-container form textarea::placeholder
+{
+    color: #888;
+}
+/*End Form*/
+/*Start engineers*/
+.engineers .container > .gallery > div > div
+{
+    width: 75%;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    background-color: white;
+    transition: 0.5s;
+}
+.engineers .container > .gallery > div > div:hover
+{
+    width: 100%;
+}
+.engineers .container > .gallery > div > img:hover + div
+{
+    width: 100%;
+    transition: 0.5s;
+}
+/*End engineers*/
+.animate
+{
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}

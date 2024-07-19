@@ -1,0 +1,48 @@
+@keyframes Swiper {
+    0%
+    {
+        transform: translateX(0vw);
+    }
+    16.67%
+    {
+        transform: translateX(0vw);
+    }
+    33.34%
+    {
+        transform: translateX(0vw);
+    }
+    50%
+    {
+        transform: translateX(-100%);
+    }
+    66.68%
+    {
+        transform: translateX(-100%);
+
+    }
+    83.35%
+    {
+        transform: translateX(-100%);
+
+    }
+    100%
+    {
+        transform: translateX(0vw);
+
+    }
+}
+@keyframes reveal {
+    0%
+    {
+        opacity: 0;
+        transform: translateY(100vh);
+    }
+    80%
+    {
+        transform: translateY(0);
+    }
+    100%
+    {
+        opacity: 1;
+    }
+}
