@@ -2,5 +2,8 @@
   "dependencies": {
     "scrollmagic": "^2.0.8",
     "scrollreveal": "^4.0.9"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
   }
 }
